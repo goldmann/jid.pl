@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Informacje i statystyki
 ---
 
 %h2 Informacje i statystyki
@@ -14,7 +15,7 @@ layout: base
     $('#servers-count').html(JSON.parse(data.contents)["servers"]);
   });
 
-%table.table
+%table.table{:style=>"width: 400px;"}
   %tr
     %th Ilość podlączonych użytkowników
     %td
@@ -28,7 +29,7 @@ layout: base
 
 %h3 Oprogramowanie
 
-%table.table
+%table.table{:style=>"width: 400px;"}
   %tr
     %th{:style=>"width: 200px;"} System operacyjny
     %td CentOS 5
@@ -56,9 +57,9 @@ layout: base
 
 %p W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.
 
-%table.table
+%table.table{:style=>"width: 400px;"}
   %tr
-    %th{:style=>"width: 200px;"} Model serwera
+    %th{:style=>"width: 120px;"} Model serwera
     %td SUN Fire x2200 M2
   %tr
     %th Procesor
@@ -72,9 +73,9 @@ layout: base
 
 %h3 Parametry techniczne wirtualnej maszyny
 
-%table.table
+%table.table{:style=>"width: 400px;"}
   %tr
-    %th{:style=>"width: 200px;"} Procesor
+    %th{:style=>"width: 120px;"} Procesor
     %td 2 rdzenie, AMD Opteron 2210 (1.8GHz)
   %tr
     %th Pamięć RAM

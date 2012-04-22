@@ -1,21 +1,69 @@
 ---
 layout: base
+title: Strona główna
 ---
 
-%h2 Serwer w pigulce
+.hero-unit
+  %h1 &lt;jid.pl/&gt;
+  %p Serwer XMPP działający od 2006 roku
+  .btn-group
+    %a{:class=>"btn btn-primary btn-large", :href=>"/blog/"} Blog
+    %a{:class=>"btn btn-large", :href=>"/info/"} Informacje
+    %a{:class=>"btn btn-large", :href=>"/help/"} Pomoc
 
-%h3 Oprogramowanie
+.row
+  .span5
 
-Openfire 3.6.4
+    %h3 Ostatnie wiadomości na Twitterze
 
+    :plain
+      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+      <script>
+      new TWTR.Widget({
+        version: 2,
+        type: 'profile',
+        rpp: 5,
+        interval: 6000,
+        width: 'auto',
+        height: 300,
+        theme: {
+          shell: {
+            background: '#ffffff',
+            color: '#880000'
+          },
+          tweets: {
+            background: '#ffffff',
+            color: '#000000',
+            links: '#880000'
+          }
+        },
+        features: {
+          scrollbar: false,
+          loop: false,
+          live: false,
+          hashtags: true,
+          timestamp: true,
+          avatars: false,
+          behavior: 'all'
+        }
+      }).render().setUser('jidpl').start();
+      </script>
 
+  .span2
+    %div
+      :plain
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="boxgrinder">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-%h3 Dane techniczne
+    %div{:style => "margin-top: 5px;"}
+      :plain
+        <!-- Place this tag where you want the +1 button to render -->
+        <g:plusone></g:plusone>
 
-SUN Fire x2200 M2<br/>
-1x AMD Opteron 2210 (1.8GHz)</br>
-8 GB ECC-R</br>
-2x 250 GB SATA II (RAID-1)</br>
-
-%h2 Historia serwera
-
+        <!-- Place this render call where appropriate -->
+        <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+        </script>
