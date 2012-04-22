@@ -3,4 +3,5 @@ profiles:
     base_url: http://new.jid.pl
     deploy:
       host: github_pages
-
+intense_debate_acct: 6eb4f3493c120245703a2155af29056d
+google_analytics: UA-351971-2

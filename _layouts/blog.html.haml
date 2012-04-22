@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+%h2 #{page.title}
+
+.row
+  .span5
+    .byline{:style => "border-bottom: 1px solid #eee; margin-bottom: 10px; padding-bottom: 10px;"}
+      .author <strong>#{page.author}</strong>
+      .date #{page.timestamp.strftime( '%d %B %Y %H:%M %Z' )}
+      .tags
+        - unless page.tags.empty?
+          - page.tags.each do |tag|
+            %a{:href=>tag.primary_page.url}
+              = tag
+    ~ content
+    .comments
+      = page.intense_debate_comments
+  .span2
+    = partial( 'social.html.haml' )
