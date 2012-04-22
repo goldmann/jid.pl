@@ -10,16 +10,12 @@ layout: base
       .post
         %h2.title
           %a{:href=>post.url}= post.title
-        .byline{:style => "border-bottom: 1px solid #eee; margin-bottom: 10px; padding-bottom: 10px;"}
+        .byline{:style => "margin-bottom: 10px;"}
           .author <strong>#{post.author}</strong>
           .date #{post.timestamp.strftime( '%d %B %Y %H:%M %Z' )}
-          .tags
-            - unless post.tags.empty?
-              - post.tags.each do |tag|
-                %a{:href=>tag.primary_page.url}
-                  = tag
         .body
-          ~ post.content
+          ~ post.content[0..200].gsub(/<\/?[^>]*>/, "")
+          %a{:href=>post.url} [...]
         .comments
           = post.intense_debate_comments_link
     = page.posts.links
