@@ -88,24 +88,32 @@
     </div>
     <div id='content'>
       <h2>Informacje i statystyki</h2>
+      <p>Poniżej znajdziejsz garść informacji na temat serwera.</p>
       <h3>Statystyki</h3>
       <script type='text/javascript'>
         //<![CDATA[
-          $(document).ready(function(){
-            // load home page when the page loads
-            $("#response").load("http://jid.pl");
+          $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?', function(data){
+            $('#users-count').html(JSON.parse(data.contents)["users"]);
+            $('#servers-count').html(JSON.parse(data.contents)["servers"]);
           });
         //]]>
       </script>
-      <div id='response'></div>
       <table class='table'>
         <tr>
           <th>Ilość podlączonych użytkowników</th>
-          <td><strong>234</strong></td>
+          <td>
+            <strong>
+              <div id='users-count'>loading...</div>
+            </strong>
+          </td>
         </tr>
         <tr>
           <th>Ilość podlączonych serwerów</th>
-          <td><strong>134</strong></td>
+          <td>
+            <strong>
+              <div id='servers-count'>loading...</div>
+            </strong>
+          </td>
         </tr>
       </table>
       <h3>Oprogramowanie</h3>
