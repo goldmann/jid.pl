@@ -1,0 +1,82 @@
+---
+layout: base
+---
+
+%h2 Informacje i statystyki
+
+%h3 Statystyki
+
+:javascript
+  $(document).ready(function(){
+    // load home page when the page loads
+    $("#response").load("http://jid.pl");
+  });
+
+
+#response
+
+%table.table
+  %tr
+    %th Ilość podlączonych użytkowników
+    %td <strong>234</strong>
+  %tr
+    %th Ilość podlączonych serwerów
+    %td <strong>134</strong>
+
+%h3 Oprogramowanie
+
+%table.table
+  %tr
+    %th System operacyjny
+    %td CentOS 5
+  %tr
+    %th Serwer XMPP
+    %td Openfire 3.6.4
+  %tr
+    %th Obsługiwane porty
+    %td 5222 - TLS i połączenia nieszyfrowane<br/>5223 - SSL (nie zalecane)
+  %tr
+    %th Dostępne transporty
+    %td
+      %p <a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3
+      %ul
+        %li MSN Messenger
+        %li IRC
+        %li AOL Instant Messenger
+        %li ICQ
+        %li Yahoo! Messenger
+        %li Google Talk
+        %li XMPP
+
+
+%h3 Parametry techniczne fizycznego serwera
+
+%p W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.
+
+%table.table
+  %tr
+    %th Model serwera
+    %td SUN Fire x2200 M2
+  %tr
+    %th Procesor
+    %td 1x AMD Opteron 2210 (1.8GHz)
+  %tr
+    %th Pamiec RAM
+    %td 8 GB ECC-R
+  %tr
+    %th Dysk twardy
+    %td 2x 250 GB SATA II (RAID-1)
+
+%h3 Parametry techniczne wirtualnej maszyny
+
+%table.table
+  %tr
+    %th Procesor
+    %td 2 rdzenie, AMD Opteron 2210 (1.8GHz)
+  %tr
+    %th Pamięć RAM
+    %td 2 GB
+  %tr
+    %th Dysk twardy
+    %td 60 GB
+

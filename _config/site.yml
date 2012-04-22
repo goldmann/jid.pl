@@ -1,0 +1,6 @@
+profiles:
+  production:
+    base_url: http://goldmann.github.com/jid.pl
+    deploy:
+      host: github_pages
+

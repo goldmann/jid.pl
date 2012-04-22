@@ -1,0 +1,81 @@
+!!! XML
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "pl", :lang => "pl" }
+  %head
+    %title &lt;jid.pl/&gt; | #{page.title}
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/bootstrap.css' }
+    %script{ :src => "/javascripts/jquery-1.7.min.js" }
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8'}
+  :css
+    html,body {
+      background: none;
+    }
+    html {
+    }
+    li {
+      color: #404040;
+    }
+    ul.nav-pills {
+      margin: 0;
+    }
+    p {
+    }
+    #main {
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4) inset;
+    }
+    #menu {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    #shadow {
+
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4) inset;
+    }
+    #header {
+      padding: 20px;
+      clear: both;
+      overflow: hidden;
+      border-bottom: 10px solid #880000;
+    }
+    #content {
+      padding: 10px;
+      width: 600px;   
+    }
+    
+    ul.nav-pills {
+      margin-top: 5px;
+    }
+
+    .nav-pills > li > a {
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 5px 5px 5px 0;
+      color: #880000;
+      text-shadow: none;
+    }
+    .nav-pills > li > a:hover {
+      color: #ffffff;
+      background-color: #aa0000;
+      text-shadow: none;
+    }
+    a {
+      color: #880000;
+    }
+    a:hover {
+      color: #aa0000;
+      text-decoration: none;
+    }
+  %body
+    #main
+      #menu
+        %ul{:class => "nav nav-pills"}
+          %li <a href="/">Strona główna</a>
+          %li <a href="/blog/">Blog</a>
+          %li <a href="/info/">Informacje</a>
+          %li <a href="/history/">Historia</a>
+          %li <a href="/help/">Pomoc</a>
+      #header
+        %img{:src => '/images/logo.png', :style => "float: right;"}
+        %h1 <a href="/">&lt;jid.pl/&gt;</a> <small>Jabber/XMPP Serwer</small>
+    #content
+      ~ content
