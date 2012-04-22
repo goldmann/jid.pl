@@ -1,6 +1,6 @@
 profiles:
   production:
-    base_url: http://new.jid.pl
+    base_url: http://www.jid.pl
     deploy:
       host: github_pages
 intense_debate_acct: 6eb4f3493c120245703a2155af29056d
