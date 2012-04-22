@@ -13,3 +13,5 @@ Udostępniłem również [stronę kontaktową](/contact/), za pomocą której mo
 Na podstronie [pomoc](/help/) znajdziesz odpowiedzi na często zadawane pytania.
 
 Mam nadzieję, że nowa strona przypadnie wam do gustu!
+
+Jeżeli znajdziejsz jakiś błąd na stronie lub chciałbyś wyrazić swoją opinię, proszę daj mi znać w komentarzach do tego postu lub poprzez [formularz kontaktowy](/contact/).
