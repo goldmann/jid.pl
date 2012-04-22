@@ -4,24 +4,27 @@ layout: base
 
 %h2 Informacje i statystyki
 
+%p Poniżej znajdziejsz garść informacji na temat serwera.
+
 %h3 Statystyki
 
 :javascript
-  $(document).ready(function(){
-    // load home page when the page loads
-    $("#response").load("http://jid.pl");
+  $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?', function(data){
+    $('#users-count').html(JSON.parse(data.contents)["users"]);
+    $('#servers-count').html(JSON.parse(data.contents)["servers"]);
   });
-
-
-#response
 
 %table.table
   %tr
     %th Ilość podlączonych użytkowników
-    %td <strong>234</strong>
+    %td
+      %strong
+        #users-count loading...
   %tr
     %th Ilość podlączonych serwerów
-    %td <strong>134</strong>
+    %td
+      %strong
+        #servers-count loading...
 
 %h3 Oprogramowanie
 
