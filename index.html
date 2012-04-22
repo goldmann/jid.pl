@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='pl' xml:lang='pl' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>&lt;jid.pl/&gt; |</title>
+    <title>&lt;jid.pl/&gt; | Strona główna</title>
     <link href='/stylesheets/bootstrap.css' rel='stylesheet' type='text/css' />
     <script src='/javascripts/jquery-1.7.min.js'></script>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
@@ -11,6 +11,9 @@
     /*<![CDATA[*/
       html,body {
         background: none;
+      }
+      h2 {
+        margin-bottom: 10px;
       }
       html {
       }
@@ -41,7 +44,11 @@
       }
       #content {
         padding: 10px;
-        width: 600px;   
+        width: 670px;   
+      }
+      
+      .hero-unit {
+        padding: 30px;
       }
       
       ul.nav-pills {
@@ -59,6 +66,9 @@
         color: #ffffff;
         background-color: #aa0000;
         text-shadow: none;
+      }
+      .twtr-ft {
+        display: none;
       }
       a {
         color: #880000;
@@ -87,15 +97,69 @@
       </div>
     </div>
     <div id='content'>
-      <h2>Serwer w pigulce</h2>
-      <h3>Oprogramowanie</h3>
-      Openfire 3.6.4
-      <h3>Dane techniczne</h3>
-      SUN Fire x2200 M2<br/>
-      1x AMD Opteron 2210 (1.8GHz)</br>
-      8 GB ECC-R</br>
-      2x 250 GB SATA II (RAID-1)</br>
-      <h2>Historia serwera</h2>
+      <div class='hero-unit'>
+        <h1>&lt;jid.pl/&gt;</h1>
+        <p>Serwer XMPP działający od 2006 roku</p>
+        <div class='btn-group'>
+          <a class='btn btn-primary btn-large' href='/blog/'>Blog</a>
+          <a class='btn btn-large' href='/info/'>Informacje</a>
+          <a class='btn btn-large' href='/help/'>Pomoc</a>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='span5'>
+          <h3>Ostatnie wiadomości na Twitterze</h3>
+          <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+          <script>
+          new TWTR.Widget({
+            version: 2,
+            type: 'profile',
+            rpp: 5,
+            interval: 6000,
+            width: 'auto',
+            height: 300,
+            theme: {
+              shell: {
+                background: '#ffffff',
+                color: '#880000'
+              },
+              tweets: {
+                background: '#ffffff',
+                color: '#000000',
+                links: '#880000'
+              }
+            },
+            features: {
+              scrollbar: false,
+              loop: false,
+              live: false,
+              hashtags: true,
+              timestamp: true,
+              avatars: false,
+              behavior: 'all'
+            }
+          }).render().setUser('jidpl').start();
+          </script>
+        </div>
+        <div class='span2'>
+          <div>
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="boxgrinder">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+          </div>
+          <div style='margin-top: 5px;'>
+            <!-- Place this tag where you want the +1 button to render -->
+            <g:plusone></g:plusone>
+            
+            <!-- Place this render call where appropriate -->
+            <script type="text/javascript">
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+            </script>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

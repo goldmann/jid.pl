@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang='pl' xml:lang='pl' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>&lt;jid.pl/&gt; |</title>
+    <title>&lt;jid.pl/&gt; | Informacje i statystyki</title>
     <link href='/stylesheets/bootstrap.css' rel='stylesheet' type='text/css' />
     <script src='/javascripts/jquery-1.7.min.js'></script>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
@@ -11,6 +11,9 @@
     /*<![CDATA[*/
       html,body {
         background: none;
+      }
+      h2 {
+        margin-bottom: 10px;
       }
       html {
       }
@@ -41,7 +44,11 @@
       }
       #content {
         padding: 10px;
-        width: 600px;   
+        width: 670px;   
+      }
+      
+      .hero-unit {
+        padding: 30px;
       }
       
       ul.nav-pills {
@@ -59,6 +66,9 @@
         color: #ffffff;
         background-color: #aa0000;
         text-shadow: none;
+      }
+      .twtr-ft {
+        display: none;
       }
       a {
         color: #880000;
@@ -98,7 +108,7 @@
           });
         //]]>
       </script>
-      <table class='table'>
+      <table class='table' style='width: 400px;'>
         <tr>
           <th>Ilość podlączonych użytkowników</th>
           <td>
@@ -117,7 +127,7 @@
         </tr>
       </table>
       <h3>Oprogramowanie</h3>
-      <table class='table'>
+      <table class='table' style='width: 400px;'>
         <tr>
           <th style='width: 200px;'>System operacyjny</th>
           <td>CentOS 5</td>
@@ -148,9 +158,9 @@
       </table>
       <h3>Parametry techniczne fizycznego serwera</h3>
       <p>W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.</p>
-      <table class='table'>
+      <table class='table' style='width: 400px;'>
         <tr>
-          <th style='width: 200px;'>Model serwera</th>
+          <th style='width: 120px;'>Model serwera</th>
           <td>SUN Fire x2200 M2</td>
         </tr>
         <tr>
@@ -167,9 +177,9 @@
         </tr>
       </table>
       <h3>Parametry techniczne wirtualnej maszyny</h3>
-      <table class='table'>
+      <table class='table' style='width: 400px;'>
         <tr>
-          <th style='width: 200px;'>Procesor</th>
+          <th style='width: 120px;'>Procesor</th>
           <td>2 rdzenie, AMD Opteron 2210 (1.8GHz)</td>
         </tr>
         <tr>
