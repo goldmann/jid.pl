@@ -110,8 +110,8 @@
             dataType: 'json',
             timeout: 5000,
             success: function(data) {
-              $('#users-count').html(data.contents["users"]);
-              $('#servers-count').html(data.contents["servers"]);
+              $('#users-count').html($.parseJSON(data.contents)["users"]);
+              $('#servers-count').html($.parseJSON(data.contents)["servers"]);
             },
             error: function(xhr, options, error) {
               $('#users-count').html("błąd");
