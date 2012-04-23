@@ -3,5 +3,14 @@ profiles:
     base_url: http://www.jid.pl
     deploy:
       host: github_pages
+  openshift:
+    baseurl: http://website-goldmann.rhcloud.com
+    deploy:
+      type: openshift
+      username: b98815a6002846f3adcc2088eee99ca5
+      host: website-goldmann.rhcloud.com
+      appname: website
+      path: php
+
 intense_debate_acct: 6eb4f3493c120245703a2155af29056d
 google_analytics: UA-351971-2

@@ -10,22 +10,31 @@ title: Informacje i statystyki
 %h3 Statystyki
 
 :javascript
-  $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?', function(data){
-    $('#users-count').html(JSON.parse(data.contents)["users"]);
-    $('#servers-count').html(JSON.parse(data.contents)["servers"]);
+  $.ajax({
+    url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?',
+    dataType: 'json',
+    timeout: 5000,
+    success: function(data) {
+      $('#users-count').html(data.contents["users"]);
+      $('#servers-count').html(data.contents["servers"]);
+    },
+    error: function(xhr, options, error) {
+      $('#users-count').html("błąd");
+      $('#servers-count').html("błąd");
+    }
   });
 
 %table.table{:style=>"width: 400px;"}
   %tr
-    %th Ilość podlączonych użytkowników
+    %th Ilość podłączonych użytkowników
     %td
       %strong
-        #users-count loading...
+        #users-count ładowanie...
   %tr
-    %th Ilość podlączonych serwerów
+    %th Ilość podłączonych serwerów
     %td
       %strong
-        #servers-count loading...
+        #servers-count ładowanie...
 
 %h3 Oprogramowanie
 
