@@ -32,3 +32,11 @@ Mamy powtórkę z rozrywki. Znów nie ma prądu na węźlę, a my znów nie mamy
 
 Trzymajcie się mocno, <strong>CDN</strong>...
 
+#### \[Aktualizacja 23.04.2012 11:45 CEST\]
+
+Łącze zaczęło znowu działać. Tym razem przerwa trwała około 12 godzin. Przyczyna dokładnie ta sama co wcześniej - brak prądu na węźle. Otrzymałem indormaję, że przyczyna została zlikwidowana. Mam nadzieję, że to prawda i nie będę musiał znowu aktualizować tego posta.
+
+<img src="/images/22.04.2012-1.png" />
+
+Dziękuję wszystkim za cierpliwość.
+
