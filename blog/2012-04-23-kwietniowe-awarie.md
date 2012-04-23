@@ -2,7 +2,7 @@
 title: "Kwietniowe awarie"
 author: "Marek Goldmann"
 layout: blog
-timestamp: 2012-04-23t10:11:00.10+02:00
+timestamp: 2012-04-23t10:45:00.10+02:00
 tags: [ awaria ]
 ---
 
