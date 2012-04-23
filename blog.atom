@@ -2,9 +2,63 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://www.jid.pl/</id>
   <title>Wiadomości</title>
-  <updated>2012-04-22T11:38:00+02:00</updated>
+  <updated>2012-04-23T10:11:00+02:00</updated>
   <link href='http://www.jid.pl/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://www.jid.pl/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
+    <title>Kwietniowe awarie</title>
+    <updated>2012-04-23T10:11:00+02:00</updated>
+    <published>2012-04-23T10:11:00+02:00</published>
+    <link href='http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/' rel='alternate' type='text/html' />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <summary>
+      Nie jest to najlepszy miesiąc dla serwera jid.pl. Mieliśmy kilka awarii Internetu. Okazuje się, że lokalny dostawca ma problemy z zachowaniem jakości usług, co pewnie doprowadzi do jego zmiany, bardzo szybko.
+      
+      Korzystając z okazji chciałbym jeszcze raz poinformować:
+      
+      Aktualne informacje o bieżących awariach są dostępne na naszym koncie na Twitterze. Jeżeli nie ma tam informacji o utrudnieniach, daj mi znać natychmiast!
+      
+      12 kwiecień
+      
+      Tego dnia mieliśmy awarię łącza w okolicy południa (11:50-13:10). Przyczyna nie do końca znana.
+      
+      
+      
+      20 kwiecień
+      
+      Czarny weekend dla serwera rozpoczął się od tej awarii. To najdłuższa przerwa w działaniu serwera od początku uruchomienia go. Łącze przestało działać ok 12-ej i nie było...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;Nie jest to najlepszy miesiąc dla serwera jid.pl. Mieliśmy kilka awarii Internetu. Okazuje się, że lokalny dostawca ma problemy z zachowaniem jakości usług, co pewnie doprowadzi do jego zmiany, &lt;strong&gt;bardzo szybko&lt;/strong&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;Korzystając z okazji chciałbym jeszcze raz poinformować:&lt;/p&gt;
+      
+      &lt;p&gt;&lt;strong&gt;Aktualne informacje o bieżących awariach są dostępne na naszym koncie na &lt;a href=&quot;https://twitter.com/#!/jidpl&quot;&gt;Twitterze&lt;/a&gt;. Jeżeli nie ma tam informacji o utrudnieniach, &lt;a href=&quot;http://www.jid.pl/contact/&quot;&gt;daj mi znać natychmiast&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
+      
+      &lt;h3&gt;12 kwiecień&lt;/h3&gt;
+      
+      &lt;p&gt;Tego dnia mieliśmy awarię łącza w okolicy południa (11:50-13:10). Przyczyna nie do końca znana.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/12.04.2012.png&quot; /&gt;&lt;/p&gt;
+      
+      &lt;h3&gt;20 kwiecień&lt;/h3&gt;
+      
+      &lt;p&gt;Czarny weekend dla serwera rozpoczął się od tej awarii. To najdłuższa przerwa w działaniu serwera od początku uruchomienia go. Łącze przestało działać ok 12-ej i nie było Internetu aż do 17-ej. Z tym, że pojawił się tylko na chwiilę (w marnej jakości) i zniknął na kolejne godziny. Dopiero o godzinie ósmej rano powrócił. Serwer był niedostępny przez 21 godziny.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/20.04.2012-2.png&quot; /&gt;&lt;/p&gt;
+      
+      &lt;p&gt;Przyczyną awarii był brak zasilania na węźle operatora. Powód? Błahy, ktoś nie płacił rachunków za prąd...&lt;/p&gt;
+      
+      &lt;h3&gt;22 kwiecień&lt;/h3&gt;
+      
+      &lt;p&gt;Mamy powtórkę z rozrywki. Znów nie ma prądu na węźlę, a my znów nie mamy Internetu.&lt;/p&gt;
+      
+      &lt;p&gt;Trzymajcie się mocno, &lt;strong&gt;CDN&lt;/strong&gt;...&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <id>http://www.jid.pl/blog/2012/04/22/nowa-strona/</id>
     <title>Nowa strona!</title>
