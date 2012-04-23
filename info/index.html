@@ -105,26 +105,35 @@
       <h3>Statystyki</h3>
       <script type='text/javascript'>
         //<![CDATA[
-          $.getJSON('http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?', function(data){
-            $('#users-count').html(JSON.parse(data.contents)["users"]);
-            $('#servers-count').html(JSON.parse(data.contents)["servers"]);
+          $.ajax({
+            url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?',
+            dataType: 'json',
+            timeout: 5000,
+            success: function(data) {
+              $('#users-count').html(data.contents["users"]);
+              $('#servers-count').html(data.contents["servers"]);
+            },
+            error: function(xhr, options, error) {
+              $('#users-count').html("błąd");
+              $('#servers-count').html("błąd");
+            }
           });
         //]]>
       </script>
       <table class='table' style='width: 400px;'>
         <tr>
-          <th>Ilość podlączonych użytkowników</th>
+          <th>Ilość podłączonych użytkowników</th>
           <td>
             <strong>
-              <div id='users-count'>loading...</div>
+              <div id='users-count'>ładowanie...</div>
             </strong>
           </td>
         </tr>
         <tr>
-          <th>Ilość podlączonych serwerów</th>
+          <th>Ilość podłączonych serwerów</th>
           <td>
             <strong>
-              <div id='servers-count'>loading...</div>
+              <div id='servers-count'>ładowanie...</div>
             </strong>
           </td>
         </tr>
