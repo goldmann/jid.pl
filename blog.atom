@@ -2,14 +2,14 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://www.jid.pl/</id>
   <title>Wiadomości</title>
-  <updated>2012-04-23T10:11:00+02:00</updated>
+  <updated>2012-04-23T10:45:00+02:00</updated>
   <link href='http://www.jid.pl/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://www.jid.pl/' rel='alternate' type='text/html' />
   <entry>
     <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
     <title>Kwietniowe awarie</title>
-    <updated>2012-04-23T10:11:00+02:00</updated>
-    <published>2012-04-23T10:11:00+02:00</published>
+    <updated>2012-04-23T10:45:00+02:00</updated>
+    <published>2012-04-23T10:45:00+02:00</published>
     <link href='http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/' rel='alternate' type='text/html' />
     <author>
       <name>Marek Goldmann</name>
