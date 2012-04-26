@@ -2,9 +2,34 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://www.jid.pl/</id>
   <title>Wiadomości</title>
-  <updated>2012-04-23T10:45:00+02:00</updated>
+  <updated>2012-04-26T14:38:00+02:00</updated>
   <link href='http://www.jid.pl/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://www.jid.pl/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/</id>
+    <title>Aktualizacja oprogramowania 27.04.2012</title>
+    <updated>2012-04-26T14:38:00+02:00</updated>
+    <published>2012-04-26T14:38:00+02:00</published>
+    <link href='http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/' rel='alternate' type='text/html' />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <summary>
+      Jutro (tj. 27.04.2012) w godzinach popołudniowych nastąpi aktualizacja oprogramowania serwera. Aktualizacji będzie podlegało oprogramowanie do wirtualizacji. Postaram się zrobić tak, aby moje prace nie były zauważalne dla użytkowników, jednak mogą wystąpić krótkie przerwy. W najgorszym wypadku serwer będzie musiał być wyłączony w tym czasie. Cała operacja powinna potrwać około 10-20 minut. Znając życie, potrwa to pół godziny :)
+      
+      Przed samą aktualizacją będzie rozesłane info do wszystkich użytkowników online.
+      
+      W niedługiej przyszłości planuję również aktualizację systemu operacyjnego do nowszej wersji. Stosowna informacja zostanie przekazana również w wyprzedzeniem.
+      ...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;Jutro (tj. 27.04.2012) w godzinach popołudniowych nastąpi aktualizacja oprogramowania serwera. Aktualizacji będzie podlegało oprogramowanie do wirtualizacji. Postaram się zrobić tak, aby moje prace nie były zauważalne dla użytkowników, jednak mogą wystąpić krótkie przerwy. W najgorszym wypadku serwer będzie musiał być wyłączony w tym czasie. Cała operacja powinna potrwać około &lt;strong&gt;10-20 minut&lt;/strong&gt;. Znając życie, potrwa to pół godziny :)&lt;/p&gt;
+      
+      &lt;p&gt;Przed samą aktualizacją będzie rozesłane info do wszystkich użytkowników online.&lt;/p&gt;
+      
+      &lt;p&gt;W niedługiej przyszłości planuję również aktualizację systemu operacyjnego do nowszej wersji. Stosowna informacja zostanie przekazana również w wyprzedzeniem.&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
     <title>Kwietniowe awarie</title>
@@ -60,7 +85,7 @@
       
       &lt;h4&gt;[Aktualizacja 23.04.2012 11:45 CEST]&lt;/h4&gt;
       
-      &lt;p&gt;Łącze zaczęło znowu działać. Tym razem przerwa trwała około 12 godzin. Przyczyna dokładnie ta sama co wcześniej - brak prądu na węźle. Otrzymałem indormaję, że przyczyna została zlikwidowana. Mam nadzieję, że to prawda i nie będę musiał znowu aktualizować tego posta.&lt;/p&gt;
+      &lt;p&gt;Łącze zaczęło znowu działać. Tym razem przerwa trwała około 12 godzin. Przyczyna dokładnie ta sama co wcześniej - brak prądu na węźle. Otrzymałem informację, że przyczyna została zlikwidowana. Mam nadzieję, że to prawda i nie będę musiał znowu aktualizować tego posta.&lt;/p&gt;
       
       &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/22.04.2012-1.png&quot; /&gt;&lt;/p&gt;
       
