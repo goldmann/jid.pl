@@ -1,0 +1,7 @@
+%h3 Ostatnie wiadomości na blogu
+
+- for post in site.posts[0,4] do
+  .item
+    %h6 #{post.date.strftime( '%d %B %Y' )}
+    %h4
+      %a{:href=>post.url}= post.title

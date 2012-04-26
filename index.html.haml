@@ -14,7 +14,7 @@ title: Strona główna
     %a{:class=>"btn btn-large", :href=>"/help/"} Pomoc
 
 .row
-  .span5
+  .span4
 
     %h3 Ostatnie wiadomości na Twitterze
 
@@ -51,6 +51,7 @@ title: Strona główna
       }).render().setUser('jidpl').start();
       </script>
 
-  .span2
+  .span3
+    = partial( 'latest_news.html.haml' )
     = partial( 'social.html.haml' )
 

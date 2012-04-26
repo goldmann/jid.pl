@@ -2,7 +2,7 @@ profiles:
   production:
     base_url: http://www.jid.pl
     deploy:
-      type: github_pages
+      host: github_pages
   openshift:
     baseurl: http://website-goldmann.rhcloud.com
     deploy:
