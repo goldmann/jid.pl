@@ -2,9 +2,67 @@
 <feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
   <id>http://www.jid.pl/</id>
   <title>Wiadomości</title>
-  <updated>2012-04-26T14:38:00+02:00</updated>
+  <updated>2012-05-11T21:04:00+02:00</updated>
   <link href='http://www.jid.pl/blog.atom' rel='self' type='application/atom+xml' />
   <link href='http://www.jid.pl/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/</id>
+    <title>Majowe aktualizacje</title>
+    <updated>2012-05-11T21:04:00+02:00</updated>
+    <published>2012-05-11T21:04:00+02:00</published>
+    <link href='http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/' rel='alternate' type='text/html' />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <summary>
+      Najprawdopodobniej w dniu 20 maja 2012 nastąpi jedna z większych zaplanowanych aktualizacji na ten rok. Praktycznie rzecz biorąc zrobimy aktualizację wszystkiego oprócz oprogrogramowania samego serwera. Nadal będziemy używać Openfire 3.6.1. Ale i na niego przyjdzie czas w późniejszym terminie.
+      
+      A więc po kolei.
+      
+      Sprzęt
+      
+      Po pierwsze zmienimy fizyczny serwer na Della 1950. Będziemy mieć szybszy procesor i większe bezpieczeństwo danych w związku z RAID 0 na dyskach, jednak użytkownicy tego nie odczują, niestety. Za to ja będę miał spokojniejszą głowę.
+      
+      Łącze internetowe
+      
+      Po awariach kwietniowych postanowiliśmy zmienić łącze Internetowe. Obecnie formalizowana jest umowa. W następnym tygodniu będzie instalowany sprzęt. W trakcie tego tygodnia będę przygotowywał...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;Najprawdopodobniej w dniu &lt;strong&gt;20 maja 2012&lt;/strong&gt; nastąpi jedna z większych zaplanowanych aktualizacji na ten rok. Praktycznie rzecz biorąc zrobimy aktualizację wszystkiego oprócz oprogrogramowania samego serwera. Nadal będziemy używać Openfire 3.6.1. Ale i na niego przyjdzie czas w późniejszym terminie.&lt;/p&gt;
+      
+      &lt;p&gt;A więc po kolei.&lt;/p&gt;
+      
+      &lt;h3&gt;Sprzęt&lt;/h3&gt;
+      
+      &lt;p&gt;Po pierwsze zmienimy fizyczny serwer na Della 1950. Będziemy mieć szybszy procesor i większe bezpieczeństwo danych w związku z &lt;code&gt;RAID 0&lt;/code&gt; na dyskach, jednak użytkownicy tego nie odczują, niestety. Za to ja będę miał spokojniejszą głowę.&lt;/p&gt;
+      
+      &lt;h3&gt;Łącze internetowe&lt;/h3&gt;
+      
+      &lt;p&gt;Po &lt;a href=&quot;http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/&quot;&gt;awariach kwietniowych&lt;/a&gt; postanowiliśmy zmienić łącze Internetowe. Obecnie formalizowana jest umowa. W następnym tygodniu będzie instalowany sprzęt. W trakcie tego tygodnia będę przygotowywał serwery do nowych adresów, ponieważ cała operacja będzie wiązała się z rekonfguracją DNSów. Faktyczne przełączenie na nowy serwer nastąpi 20-ego maja, pewnie w godzinach okołopołudniowych.&lt;/p&gt;
+      
+      &lt;h3&gt;System operacyjny&lt;/h3&gt;
+      
+      &lt;p&gt;Aktualizacja nie ominie również systemu operacyjnego odpowiedzialnemu za działanie serwera. Będziemy migrować na nową wersję &lt;a href=&quot;http://www.centos.org/&quot;&gt;CentOS'a&lt;/a&gt;: z 5 do 6.&lt;/p&gt;
+      
+      &lt;h2&gt;Plan&lt;/h2&gt;
+      
+      &lt;p&gt;Plan na aktualizację jest następujący:&lt;/p&gt;
+      
+      &lt;ol&gt;
+      &lt;li&gt;Utworzyć nową wirtualną maszynę na nowym serwerze.&lt;/li&gt;
+      &lt;li&gt;Skopiować bazę danych na nowy serwer (tak, tymczasowo).&lt;/li&gt;
+      &lt;li&gt;Skonfigurować serwer tak aby działał na nowym adresie IP.&lt;/li&gt;
+      &lt;li&gt;20 maja wyłączyć serwer Jabbera i skopiować bazę danych raz jeszcze.&lt;/li&gt;
+      &lt;li&gt;Zmienić dane w DNSach tak, aby wskazywały na nowy serwer.&lt;/li&gt;
+      &lt;li&gt;Czekać.&lt;/li&gt;
+      &lt;/ol&gt;
+      
+      
+      &lt;p&gt;Sama przerwa wymagana do skopiowania bazy danych powinna potrwać kilka minut. Propagacja nowych adresów po DNSach to od kilku minut do godziny.&lt;/p&gt;
+      
+      &lt;p&gt;Tak czy owak proszę się przygotować na krótką przerwę w niedzielę, 20 maja. Zjedzcie obiad spokojnie, czy coś.&lt;/p&gt;
+    </content>
+  </entry>
   <entry>
     <id>http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/</id>
     <title>Aktualizacja oprogramowania 27.04.2012</title>
