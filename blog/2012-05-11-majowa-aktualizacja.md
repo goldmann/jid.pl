@@ -6,13 +6,13 @@ timestamp: 2012-05-11t21:04:00.10+02:00
 tags: [ aktualizacja ]
 ---
 
-Najprawdopodobniej w dniu **20 maja 2012** nastąpi jedna z większych zaplanowanych aktualizacji na ten rok. Praktycznie rzecz biorąc zrobimy aktualizację wszystkiego oprócz oprogrogramowania samego serwera. Nadal będziemy używać Openfire 3.6.1. Ale i na niego przyjdzie czas w późniejszym terminie.
+Najprawdopodobniej w dniu **20 maja 2012** nastąpi jedna z większych zaplanowanych aktualizacji na ten rok. Praktycznie rzecz biorąc zrobimy aktualizację wszystkiego oprócz oprogrogramowania samego serwera. Nadal będziemy używać Openfire 3.6.4. Ale i na niego przyjdzie czas w późniejszym terminie.
 
 A więc po kolei.
 
 ### Sprzęt
 
-Po pierwsze zmienimy fizyczny serwer na Della 1950. Będziemy mieć szybszy procesor i większe bezpieczeństwo danych w związku z `RAID 0` na dyskach, jednak użytkownicy tego nie odczują, niestety. Za to ja będę miał spokojniejszą głowę.
+Po pierwsze zmienimy fizyczny serwer na Della 1950. Będziemy mieć szybszy procesor i większe bezpieczeństwo danych w związku z `RAID 1` na dyskach, jednak użytkownicy tego nie odczują, niestety. Za to ja będę miał spokojniejszą głowę.
 
 ### Łącze internetowe
 
