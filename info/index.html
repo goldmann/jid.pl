@@ -101,128 +101,128 @@
     </div>
     <div id='content'>
       <h2>Informacje i statystyki</h2>
-      <p>Poniżej znajdziejsz garść informacji na temat serwera.</p>
-      <h3>Statystyki</h3>
-      <script type='text/javascript'>
-        //<![CDATA[
-          $.ajax({
-            url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?',
-            dataType: 'json',
-            timeout: 5000,
-            success: function(data) {
-              $('#users-count').html($.parseJSON(data.contents)["users"]);
-              $('#servers-count').html($.parseJSON(data.contents)["servers"]);
-              $('#process-uptime').html($.parseJSON(data.contents)["process_uptime"]);
-              $('#system-uptime').html($.parseJSON(data.contents)["system_uptime"]);
-            },
-            error: function(xhr, options, error) {
-              $('#users-count').html("błąd");
-              $('#servers-count').html("błąd");
-              $('#process-uptime').html("błąd");
-              $('#system-uptime').html("błąd");
-            }
-          });
-        //]]>
-      </script>
-      <table class='table' style='width: 400px;'>
-        <tr>
-          <th>Ilość podłączonych użytkowników</th>
-          <td>
-            <strong>
-              <div id='users-count'>ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-        <tr>
-          <th>Ilość podłączonych serwerów</th>
-          <td>
-            <strong>
-              <div id='servers-count'>ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-        <tr>
-          <th>Czas działania serwera</th>
-          <td>
-            <strong>
-              <div id='process-uptime'>ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-        <tr>
-          <th>Czas działania systemu</th>
-          <td>
-            <strong>
-              <div id='system-uptime'>ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-      </table>
-      <h3>Oprogramowanie</h3>
-      <table class='table' style='width: 400px;'>
-        <tr>
-          <th style='width: 200px;'>System operacyjny</th>
-          <td>CentOS 6</td>
-        </tr>
-        <tr>
-          <th>Serwer XMPP</th>
-          <td>Openfire 3.6.4</td>
-        </tr>
-        <tr>
-          <th>Obsługiwane porty</th>
-          <td>5222 - TLS i połączenia nieszyfrowane<br/>5223 - SSL (nie zalecane)</td>
-        </tr>
-        <tr>
-          <th>Dostępne transporty</th>
-          <td>
-            <p><a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3</p>
-            <ul>
-              <li>MSN Messenger</li>
-              <li>IRC</li>
-              <li>AOL Instant Messenger</li>
-              <li>ICQ</li>
-              <li>Yahoo! Messenger</li>
-              <li>Google Talk</li>
-              <li>XMPP</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <h3>Parametry techniczne fizycznego serwera</h3>
-      <p>W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.</p>
-      <table class='table' style='width: 400px;'>
-        <tr>
-          <th style='width: 120px;'>Model serwera</th>
-          <td>Dell PowerEdge 1950 III</td>
-        </tr>
-        <tr>
-          <th>Procesor</th>
-          <td>1x Intel Xeon E5430 (2.66GHz)</td>
-        </tr>
-        <tr>
-          <th>Pamiec RAM</th>
-          <td>8 GB ECC-R</td>
-        </tr>
-        <tr>
-          <th>Dysk twardy</th>
-          <td>2x 1 TB SATA II (RAID-1)</td>
-        </tr>
-      </table>
-      <h3>Parametry techniczne wirtualnej maszyny</h3>
-      <table class='table' style='width: 400px;'>
-        <tr>
-          <th style='width: 120px;'>Procesor</th>
-          <td>1 rdzeń, Intel Xeon E5430 (2.66GHz)</td>
-        </tr>
-        <tr>
-          <th>Pamięć RAM</th>
-          <td>2 GB</td>
-        </tr>
-        <tr>
-          <th>Dysk twardy</th>
-          <td>20 GB</td>
-        </tr>
-      </table>
+<p>Poniżej znajdziejsz garść informacji na temat serwera.</p>
+<h3>Statystyki</h3>
+<script type='text/javascript'>
+  //<![CDATA[
+    $.ajax({
+      url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?',
+      dataType: 'json',
+      timeout: 5000,
+      success: function(data) {
+        $('#users-count').html($.parseJSON(data.contents)["users"]);
+        $('#servers-count').html($.parseJSON(data.contents)["servers"]);
+        $('#process-uptime').html($.parseJSON(data.contents)["process_uptime"]);
+        $('#system-uptime').html($.parseJSON(data.contents)["system_uptime"]);
+      },
+      error: function(xhr, options, error) {
+        $('#users-count').html("błąd");
+        $('#servers-count').html("błąd");
+        $('#process-uptime').html("błąd");
+        $('#system-uptime').html("błąd");
+      }
+    });
+  //]]>
+</script>
+<table class='table' style='width: 400px;'>
+  <tr>
+    <th>Ilość podłączonych użytkowników</th>
+    <td>
+      <strong>
+        <div id='users-count'>ładowanie...</div>
+      </strong>
+    </td>
+  </tr>
+  <tr>
+    <th>Ilość podłączonych serwerów</th>
+    <td>
+      <strong>
+        <div id='servers-count'>ładowanie...</div>
+      </strong>
+    </td>
+  </tr>
+  <tr>
+    <th>Czas działania serwera</th>
+    <td>
+      <strong>
+        <div id='process-uptime'>ładowanie...</div>
+      </strong>
+    </td>
+  </tr>
+  <tr>
+    <th>Czas działania systemu</th>
+    <td>
+      <strong>
+        <div id='system-uptime'>ładowanie...</div>
+      </strong>
+    </td>
+  </tr>
+</table>
+<h3>Oprogramowanie</h3>
+<table class='table' style='width: 400px;'>
+  <tr>
+    <th style='width: 200px;'>System operacyjny</th>
+    <td>CentOS 6</td>
+  </tr>
+  <tr>
+    <th>Serwer XMPP</th>
+    <td>Openfire 3.6.4</td>
+  </tr>
+  <tr>
+    <th>Obsługiwane porty</th>
+    <td>5222 - TLS i połączenia nieszyfrowane<br/>5223 - SSL (nie zalecane)</td>
+  </tr>
+  <tr>
+    <th>Dostępne transporty</th>
+    <td>
+      <p><a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3</p>
+      <ul>
+        <li>MSN Messenger</li>
+        <li>IRC</li>
+        <li>AOL Instant Messenger</li>
+        <li>ICQ</li>
+        <li>Yahoo! Messenger</li>
+        <li>Google Talk</li>
+        <li>XMPP</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h3>Parametry techniczne fizycznego serwera</h3>
+<p>W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.</p>
+<table class='table' style='width: 400px;'>
+  <tr>
+    <th style='width: 120px;'>Model serwera</th>
+    <td>Dell PowerEdge 1950 III</td>
+  </tr>
+  <tr>
+    <th>Procesor</th>
+    <td>1x Intel Xeon E5430 (2.66GHz)</td>
+  </tr>
+  <tr>
+    <th>Pamiec RAM</th>
+    <td>8 GB ECC-R</td>
+  </tr>
+  <tr>
+    <th>Dysk twardy</th>
+    <td>2x 1 TB SATA II (RAID-1)</td>
+  </tr>
+</table>
+<h3>Parametry techniczne wirtualnej maszyny</h3>
+<table class='table' style='width: 400px;'>
+  <tr>
+    <th style='width: 120px;'>Procesor</th>
+    <td>1 rdzeń, Intel Xeon E5430 (2.66GHz)</td>
+  </tr>
+  <tr>
+    <th>Pamięć RAM</th>
+    <td>2 GB</td>
+  </tr>
+  <tr>
+    <th>Dysk twardy</th>
+    <td>20 GB</td>
+  </tr>
+</table>
     </div>
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
