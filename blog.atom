@@ -1,16 +1,20 @@
-<?xml version='1.0' encoding='utf-8' ?>
-<feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.jid.pl/</id>
   <title>Wiadomo&#347;ci</title>
-  <updated>2012-11-20T12:49:19+01:00</updated>
-  <link href='http://www.jid.pl/blog.atom' rel='self' type='application/atom+xml' />
-  <link href='http://www.jid.pl/' rel='alternate' type='text/html' />
+  <updated>2013-06-24T13:35:46+02:00</updated>
+  <link href="http://www.jid.pl/blog.atom" rel="self" type="application/atom+xml" />
+  <link href="http://www.jid.pl/" rel="alternate" type="text/html" />
   <entry>
     <id>http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/</id>
     <title>Majowe aktualizacje</title>
-    <updated>2012-11-20T12:49:19+01:00</updated>
+    <updated>2013-06-24T13:35:46+02:00</updated>
     <published>2012-05-11T21:04:00+02:00</published>
-    <link href='http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/' rel='alternate' type='text/html' />
+    <link href="http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/" rel="alternate" type="text/html" />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <category term="aktualizacja"></category>
     <summary>
       Najprawdopodobniej w dniu 20 maja 2012 nastąpi jedna z większych zaplanowanych aktualizacji na ten rok. Praktycznie rzecz biorąc zrobimy aktualizację wszystkiego oprócz oprogrogramowania samego serwera. Nadal będziemy używać Openfire 3.6.4. Ale i na niego przyjdzie czas w późniejszym terminie.
       
@@ -24,48 +28,51 @@
       
       Po awariach kwietniowych postanowiliśmy zmienić łącze Internetowe. Obecnie formalizowana jest umowa. W następnym tygodniu będzie instalowany sprzęt. W trakcie tego tygodnia będę przygotowywał...
     </summary>
-    <content type='html'>
+    <content type="html">
       &lt;p&gt;Najprawdopodobniej w dniu &lt;strong&gt;20 maja 2012&lt;/strong&gt; nastąpi jedna z większych zaplanowanych aktualizacji na ten rok. Praktycznie rzecz biorąc zrobimy aktualizację wszystkiego oprócz oprogrogramowania samego serwera. Nadal będziemy używać Openfire 3.6.4. Ale i na niego przyjdzie czas w późniejszym terminie.&lt;/p&gt;
-
-&lt;p&gt;A więc po kolei.&lt;/p&gt;
-
-&lt;h3&gt;Sprzęt&lt;/h3&gt;
-
-&lt;p&gt;Po pierwsze zmienimy fizyczny serwer na Della 1950. Będziemy mieć szybszy procesor i większe bezpieczeństwo danych w związku z &lt;code&gt;RAID 1&lt;/code&gt; na dyskach, jednak użytkownicy tego nie odczują, niestety. Za to ja będę miał spokojniejszą głowę.&lt;/p&gt;
-
-&lt;h3&gt;Łącze internetowe&lt;/h3&gt;
-
-&lt;p&gt;Po &lt;a href=&quot;http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/&quot;&gt;awariach kwietniowych&lt;/a&gt; postanowiliśmy zmienić łącze Internetowe. Obecnie formalizowana jest umowa. W następnym tygodniu będzie instalowany sprzęt. W trakcie tego tygodnia będę przygotowywał serwery do nowych adresów, ponieważ cała operacja będzie wiązała się z rekonfguracją DNSów. Faktyczne przełączenie na nowy serwer nastąpi 20-ego maja, pewnie w godzinach okołopołudniowych.&lt;/p&gt;
-
-&lt;h3&gt;System operacyjny&lt;/h3&gt;
-
-&lt;p&gt;Aktualizacja nie ominie również systemu operacyjnego odpowiedzialnemu za działanie serwera. Będziemy migrować na nową wersję &lt;a href=&quot;http://www.centos.org/&quot;&gt;CentOS'a&lt;/a&gt;: z 5 do 6.&lt;/p&gt;
-
-&lt;h2&gt;Plan&lt;/h2&gt;
-
-&lt;p&gt;Plan na aktualizację jest następujący:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Utworzyć nową wirtualną maszynę na nowym serwerze.&lt;/li&gt;
-&lt;li&gt;Skopiować bazę danych na nowy serwer (tak, tymczasowo).&lt;/li&gt;
-&lt;li&gt;Skonfigurować serwer tak aby działał na nowym adresie IP.&lt;/li&gt;
-&lt;li&gt;20 maja wyłączyć serwer Jabbera i skopiować bazę danych raz jeszcze.&lt;/li&gt;
-&lt;li&gt;Zmienić dane w DNSach tak, aby wskazywały na nowy serwer.&lt;/li&gt;
-&lt;li&gt;Czekać.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Sama przerwa wymagana do skopiowania bazy danych powinna potrwać kilka minut. Propagacja nowych adresów po DNSach to od kilku minut do godziny.&lt;/p&gt;
-
-&lt;p&gt;Tak czy owak proszę się przygotować na krótką przerwę w niedzielę, 20 maja. Zjedzcie obiad spokojnie, czy coś.&lt;/p&gt;
+      
+      &lt;p&gt;A więc po kolei.&lt;/p&gt;
+      
+      &lt;h3&gt;Sprzęt&lt;/h3&gt;
+      
+      &lt;p&gt;Po pierwsze zmienimy fizyczny serwer na Della 1950. Będziemy mieć szybszy procesor i większe bezpieczeństwo danych w związku z &lt;code&gt;RAID 1&lt;/code&gt; na dyskach, jednak użytkownicy tego nie odczują, niestety. Za to ja będę miał spokojniejszą głowę.&lt;/p&gt;
+      
+      &lt;h3&gt;Łącze internetowe&lt;/h3&gt;
+      
+      &lt;p&gt;Po &lt;a href=&quot;http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/&quot;&gt;awariach kwietniowych&lt;/a&gt; postanowiliśmy zmienić łącze Internetowe. Obecnie formalizowana jest umowa. W następnym tygodniu będzie instalowany sprzęt. W trakcie tego tygodnia będę przygotowywał serwery do nowych adresów, ponieważ cała operacja będzie wiązała się z rekonfguracją DNSów. Faktyczne przełączenie na nowy serwer nastąpi 20-ego maja, pewnie w godzinach okołopołudniowych.&lt;/p&gt;
+      
+      &lt;h3&gt;System operacyjny&lt;/h3&gt;
+      
+      &lt;p&gt;Aktualizacja nie ominie również systemu operacyjnego odpowiedzialnemu za działanie serwera. Będziemy migrować na nową wersję &lt;a href=&quot;http://www.centos.org/&quot;&gt;CentOS'a&lt;/a&gt;: z 5 do 6.&lt;/p&gt;
+      
+      &lt;h2&gt;Plan&lt;/h2&gt;
+      
+      &lt;p&gt;Plan na aktualizację jest następujący:&lt;/p&gt;
+      
+      &lt;ol&gt;
+      &lt;li&gt;Utworzyć nową wirtualną maszynę na nowym serwerze.&lt;/li&gt;
+      &lt;li&gt;Skopiować bazę danych na nowy serwer (tak, tymczasowo).&lt;/li&gt;
+      &lt;li&gt;Skonfigurować serwer tak aby działał na nowym adresie IP.&lt;/li&gt;
+      &lt;li&gt;20 maja wyłączyć serwer Jabbera i skopiować bazę danych raz jeszcze.&lt;/li&gt;
+      &lt;li&gt;Zmienić dane w DNSach tak, aby wskazywały na nowy serwer.&lt;/li&gt;
+      &lt;li&gt;Czekać.&lt;/li&gt;
+      &lt;/ol&gt;
+      
+      &lt;p&gt;Sama przerwa wymagana do skopiowania bazy danych powinna potrwać kilka minut. Propagacja nowych adresów po DNSach to od kilku minut do godziny. &lt;/p&gt;
+      
+      &lt;p&gt;Tak czy owak proszę się przygotować na krótką przerwę w niedzielę, 20 maja. Zjedzcie obiad spokojnie, czy coś.&lt;/p&gt;
     </content>
   </entry>
   <entry>
     <id>http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/</id>
     <title>Aktualizacja oprogramowania 27.04.2012</title>
-    <updated>2012-11-20T12:49:19+01:00</updated>
+    <updated>2013-06-24T13:35:46+02:00</updated>
     <published>2012-04-26T14:38:00+02:00</published>
-    <link href='http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/' rel='alternate' type='text/html' />
+    <link href="http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/" rel="alternate" type="text/html" />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <category term="aktualizacja"></category>
     <summary>
       Jutro (tj. 27.04.2012) w godzinach popołudniowych nastąpi aktualizacja oprogramowania serwera. Aktualizacji będzie podlegało oprogramowanie do wirtualizacji. Postaram się zrobić tak, aby moje prace nie były zauważalne dla użytkowników, jednak mogą wystąpić krótkie przerwy. W najgorszym wypadku serwer będzie musiał być wyłączony w tym czasie. Cała operacja powinna potrwać około 10-20 minut. Znając życie, potrwa to pół godziny :)
       
@@ -74,7 +81,7 @@
       W niedługiej przyszłości planuję również aktualizację systemu operacyjnego do nowszej wersji. Stosowna informacja zostanie przekazana również w wyprzedzeniem.
       ...
     </summary>
-    <content type='html'>
+    <content type="html">
       &lt;p&gt;Jutro (tj. 27.04.2012) w godzinach popołudniowych nastąpi aktualizacja oprogramowania serwera. Aktualizacji będzie podlegało oprogramowanie do wirtualizacji. Postaram się zrobić tak, aby moje prace nie były zauważalne dla użytkowników, jednak mogą wystąpić krótkie przerwy. W najgorszym wypadku serwer będzie musiał być wyłączony w tym czasie. Cała operacja powinna potrwać około &lt;strong&gt;10-20 minut&lt;/strong&gt;. Znając życie, potrwa to pół godziny :)&lt;/p&gt;
       
       &lt;p&gt;Przed samą aktualizacją będzie rozesłane info do wszystkich użytkowników online.&lt;/p&gt;
@@ -85,9 +92,13 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
     <title>Kwietniowe awarie</title>
-    <updated>2012-11-20T12:49:19+01:00</updated>
+    <updated>2013-06-24T13:35:46+02:00</updated>
     <published>2012-04-23T10:45:00+02:00</published>
-    <link href='http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/' rel='alternate' type='text/html' />
+    <link href="http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/" rel="alternate" type="text/html" />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <category term="awaria"></category>
     <summary>
       Nie jest to najlepszy miesiąc dla serwera jid.pl. Mieliśmy kilka awarii Internetu. Okazuje się, że lokalny dostawca ma problemy z zachowaniem jakości usług, co pewnie doprowadzi do jego zmiany, bardzo szybko.
       
@@ -105,7 +116,7 @@
       
       Czarny weekend dla serwera rozpoczął się od tej awarii. To najdłuższa przerwa w działaniu serwera od początku uruchomienia go. Łącze przestało działać ok 12-ej i nie było...
     </summary>
-    <content type='html'>
+    <content type="html">
       &lt;p&gt;Nie jest to najlepszy miesiąc dla serwera jid.pl. Mieliśmy kilka awarii Internetu. Okazuje się, że lokalny dostawca ma problemy z zachowaniem jakości usług, co pewnie doprowadzi do jego zmiany, &lt;strong&gt;bardzo szybko&lt;/strong&gt;.&lt;/p&gt;
       
       &lt;p&gt;Korzystając z okazji chciałbym jeszcze raz poinformować:&lt;/p&gt;
@@ -116,13 +127,13 @@
       
       &lt;p&gt;Tego dnia mieliśmy awarię łącza w okolicy południa (11:50-13:10). Przyczyna nie do końca znana.&lt;/p&gt;
       
-      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/12.04.2012.png&quot; /&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/12.04.2012.png&quot;&gt;&lt;/p&gt;
       
       &lt;h3&gt;20 kwiecień&lt;/h3&gt;
       
       &lt;p&gt;Czarny weekend dla serwera rozpoczął się od tej awarii. To najdłuższa przerwa w działaniu serwera od początku uruchomienia go. Łącze przestało działać ok 12-ej i nie było Internetu aż do 17-ej. Z tym, że pojawił się tylko na chwiilę (w marnej jakości) i zniknął na kolejne godziny. Dopiero o godzinie ósmej rano powrócił. Serwer był niedostępny przez 21 godziny.&lt;/p&gt;
       
-      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/20.04.2012-2.png&quot; /&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/20.04.2012-2.png&quot;&gt;&lt;/p&gt;
       
       &lt;p&gt;Przyczyną awarii był brak zasilania na węźle operatora. Powód? Błahy, ktoś nie płacił rachunków za prąd...&lt;/p&gt;
       
@@ -136,7 +147,7 @@
       
       &lt;p&gt;Łącze zaczęło znowu działać. Tym razem przerwa trwała około 12 godzin. Przyczyna dokładnie ta sama co wcześniej - brak prądu na węźle. Otrzymałem informację, że przyczyna została zlikwidowana. Mam nadzieję, że to prawda i nie będę musiał znowu aktualizować tego posta.&lt;/p&gt;
       
-      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/22.04.2012-1.png&quot; /&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;http://www.jid.pl/images/22.04.2012-1.png&quot;&gt;&lt;/p&gt;
       
       &lt;p&gt;Dziękuję wszystkim za cierpliwość.&lt;/p&gt;
     </content>
@@ -144,9 +155,13 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/22/nowa-strona/</id>
     <title>Nowa strona!</title>
-    <updated>2012-11-20T12:49:19+01:00</updated>
+    <updated>2013-06-24T13:35:46+02:00</updated>
     <published>2012-04-22T11:38:00+02:00</published>
-    <link href='http://www.jid.pl/blog/2012/04/22/nowa-strona/' rel='alternate' type='text/html' />
+    <link href="http://www.jid.pl/blog/2012/04/22/nowa-strona/" rel="alternate" type="text/html" />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <category term="www"></category>
     <summary>
       Od dzisiaj serwer jid.pl posiada nową stronę. Zapraszam do rzucenia okiem na stronę o historii serwera, czy bardziej rozbudowaną stronę o statystykach.
       
@@ -159,7 +174,7 @@
       Jeżeli znajdziejsz jakiś błąd na stronie lub chciałbyś wyrazić swoją opinię, proszę daj mi znać w komentarzach do tego postu lub poprzez formularz kontaktowy.
       ...
     </summary>
-    <content type='html'>
+    <content type="html">
       &lt;p&gt;Od dzisiaj serwer &lt;a href=&quot;http://www.jid.pl/&quot;&gt;jid.pl&lt;/a&gt; posiada nową stronę. Zapraszam do rzucenia okiem na stronę o &lt;a href=&quot;http://www.jid.pl/history/&quot;&gt;historii serwera&lt;/a&gt;, czy bardziej rozbudowaną &lt;a href=&quot;http://www.jid.pl/info/&quot;&gt;stronę o statystykach&lt;/a&gt;.&lt;/p&gt;
       
       &lt;p&gt;Udostępniłem również &lt;a href=&quot;http://www.jid.pl/contact/&quot;&gt;stronę kontaktową&lt;/a&gt;, za pomocą której można zgłaszać problemy z działaniem serwera (i nie tylko).&lt;/p&gt;
