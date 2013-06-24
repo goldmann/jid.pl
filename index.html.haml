@@ -14,40 +14,9 @@ title: "Strona g&#322;&#243;wna"
 .row
   .span4
 
-    %h3 Ostatnie wiadomości na Twitterze
-
     :plain
-      <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-      <script>
-      new TWTR.Widget({
-        version: 2,
-        type: 'profile',
-        rpp: 5,
-        interval: 6000,
-        width: 'auto',
-        height: 300,
-        theme: {
-          shell: {
-            background: '#ffffff',
-            color: '#880000'
-          },
-          tweets: {
-            background: '#ffffff',
-            color: '#000000',
-            links: '#880000'
-          }
-        },
-        features: {
-          scrollbar: false,
-          loop: false,
-          live: false,
-          hashtags: true,
-          timestamp: true,
-          avatars: false,
-          behavior: 'all'
-        }
-      }).render().setUser('jidpl').start();
-      </script>
+      <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/jidpl" data-widget-id="349127072813297664">Tweets by @jidpl</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   .span3
     = partial( 'latest_news.html.haml' )
