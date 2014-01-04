@@ -2,13 +2,58 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.jid.pl/</id>
   <title>Wiadomo&#347;ci</title>
-  <updated>2013-06-24T13:35:46+02:00</updated>
+  <updated>2014-01-04T17:51:18+01:00</updated>
   <link href="http://www.jid.pl/blog.atom" rel="self" type="application/atom+xml" />
   <link href="http://www.jid.pl/" rel="alternate" type="text/html" />
   <entry>
+    <id>http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/</id>
+    <title>Zmiany na sewerze</title>
+    <updated>2014-01-04T17:51:18+01:00</updated>
+    <published>2014-01-04T17:55:00+01:00</published>
+    <link href="http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/" rel="alternate" type="text/html" />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <category term="info"></category>
+    <summary>
+      To już kolejny rok jak serwer jid.pl działa. W tym miejscu chciałbym złożyć (spóźnione, rzecz jasna) życzenia szczęśliwego Nowego Roku dla wszystkich obecnych i przyszłych użytkowników serwera. Oby serwer nam wszystkim dobrze służył! 
+      
+      Zmiany
+      
+      A teraz czas na garść zmian, które mam zamiar wprowadzić niedługo.
+      
+      Otwarcie rejestracji
+      
+      Rejestracja zostanie otwarta ponownie. Obecnie jest ona zamknięta z powodu botów, które zakładały konta na serwerze, tworzyły ruch i wysyłały wiadomości. Powodowało to niestabilne działanie serwera na tyle, że postanowiłem zamknąć rejestrację za pomocą klientów. W tym czasie zostało założone około 180 000 fałszywych kont.
+      
+      Nowa rejestracja będzie możliwa tylko za pomocą strony www. O adresie poinformuję,...
+    </summary>
+    <content type="html">
+      &lt;p&gt;To już kolejny rok jak serwer &lt;a href=&quot;http://www.jid.pl/&quot;&gt;jid.pl&lt;/a&gt; działa. W tym miejscu chciałbym złożyć (spóźnione, rzecz jasna) &lt;strong&gt;życzenia szczęśliwego Nowego Roku&lt;/strong&gt; dla wszystkich obecnych i przyszłych użytkowników serwera. Oby serwer nam wszystkim dobrze służył! &lt;/p&gt;
+      
+      &lt;h3&gt;Zmiany&lt;/h3&gt;
+      
+      &lt;p&gt;A teraz czas na garść zmian, które mam zamiar wprowadzić niedługo.&lt;/p&gt;
+      
+      &lt;h4&gt;Otwarcie rejestracji&lt;/h4&gt;
+      
+      &lt;p&gt;Rejestracja zostanie otwarta ponownie. &lt;strong&gt;Obecnie jest ona zamknięta&lt;/strong&gt; z powodu botów, które zakładały konta na serwerze, tworzyły ruch i wysyłały wiadomości. Powodowało to niestabilne działanie serwera na tyle, że postanowiłem zamknąć rejestrację za pomocą klientów. W tym czasie zostało założone około 180 000 fałszywych kont.&lt;/p&gt;
+      
+      &lt;p&gt;Nowa rejestracja będzie możliwa &lt;strong&gt;tylko za pomocą strony www&lt;/strong&gt;. O adresie poinformuję, jak tylko wszystko zostanie uruchomione.&lt;/p&gt;
+      
+      &lt;h4&gt;Aktualizacja&lt;/h4&gt;
+      
+      &lt;p&gt;Przy okazji działań związanych z rejestracją - oprogromanie serwera zostanie zaktualizowane do wersji &lt;code&gt;3.8.2&lt;/code&gt;.&lt;/p&gt;
+      
+      &lt;h3&gt;Kiedy?&lt;/h3&gt;
+      
+      &lt;p&gt;Jak wszystko dobrze pójdzie, to w &lt;strong&gt;ten weekend&lt;/strong&gt; będzie już po krzyku, ale stosowne informacje zostaną rozesłane do wszystkich uzytkowników online oraz odpowiednia informacja pojawi się również na &lt;a href=&quot;https://twitter.com/jidpl&quot;&gt;koncie Twittera naszego serwera&lt;/a&gt;.&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
     <id>http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/</id>
     <title>Majowe aktualizacje</title>
-    <updated>2013-06-24T13:35:46+02:00</updated>
+    <updated>2013-06-24T13:39:16+02:00</updated>
     <published>2012-05-11T21:04:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/" rel="alternate" type="text/html" />
     <author>
@@ -66,7 +111,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/</id>
     <title>Aktualizacja oprogramowania 27.04.2012</title>
-    <updated>2013-06-24T13:35:46+02:00</updated>
+    <updated>2013-06-24T13:39:16+02:00</updated>
     <published>2012-04-26T14:38:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/" rel="alternate" type="text/html" />
     <author>
@@ -92,7 +137,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
     <title>Kwietniowe awarie</title>
-    <updated>2013-06-24T13:35:46+02:00</updated>
+    <updated>2013-06-24T13:39:16+02:00</updated>
     <published>2012-04-23T10:45:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/" rel="alternate" type="text/html" />
     <author>
@@ -155,7 +200,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/22/nowa-strona/</id>
     <title>Nowa strona!</title>
-    <updated>2013-06-24T13:35:46+02:00</updated>
+    <updated>2013-06-24T13:39:16+02:00</updated>
     <published>2012-04-22T11:38:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/22/nowa-strona/" rel="alternate" type="text/html" />
     <author>
