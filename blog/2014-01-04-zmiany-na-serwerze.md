@@ -1,5 +1,5 @@
 ---
-title: "Zmiany na sewerze"
+title: "Zmiany na serwerze"
 author: "Marek Goldmann"
 layout: blog
 timestamp: 2014-01-04t17:55:00.10+01:00
