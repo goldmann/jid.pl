@@ -2,7 +2,7 @@
 title: "Zmiany na serwerze: sprawozdanie"
 author: "Marek Goldmann"
 layout: blog
-timestamp: 2014-01-04t21:35:00.10+01:00
+timestamp: 2014-01-11t21:35:00.10+01:00
 tags: [ info ]
 ---
 
