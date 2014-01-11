@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl" xml:lang="pl" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title>&lt;jid.pl/&gt; | Strona g&#322;&#243;wna</title>
+    <title>&lt;jid.pl/&gt; | Zmiany na serwerze: sprawozdanie</title>
     <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
     <script src="/javascripts/jquery-1.7.min.js"></script>
@@ -98,47 +98,48 @@
       </div>
     </div>
     <div id="content">
-      <div class="hero-unit">
-        <h1>&lt;jid.pl/&gt;</h1>
-        <p>Serwer XMPP działający od 2006 roku</p>
-        <div class="btn-group">
-          <a class="btn btn-primary btn-large" href="/blog/">Blog</a>
-          <a class="btn btn-large" href="https://secure.jid.pl/rejestracja/">Rejestracja</a>
-          <a class="btn btn-large" href="/info/">Informacje</a>
-          <a class="btn btn-large" href="/help/">Pomoc</a>
-        </div>
-      </div>
+      <h2>Zmiany na serwerze: sprawozdanie</h2>
       <div class="row">
-        <div class="span4">
-          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/jidpl" data-widget-id="349127072813297664">Tweets by @jidpl</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="span5">
+          <div class="byline" style="border-bottom: 1px solid #eee; margin-bottom: 10px; padding-bottom: 10px;">
+            <div class="author"><strong>Marek Goldmann</strong></div>
+            <div class="date">04 January 2014 21:35 CET</div>
+            <div class="tags">
+              <a href="/blog/tags/info/">
+                info
+              </a>
+            </div>
+          </div>
+          <p>Tak <a href="/blog/2014/01/04/zmiany-na-serwerze/">jak wspomniałem wcześniej</a> - zabrałem się do pracy i dokonałem kilku zmian na serwerze.</p>
+          
+          <h3>Rejestracja</h3>
+          
+          <p>Rejestracja została otwarta dla nowych użytkowników. Jest ona dostępna <strong>wyłącznie</strong> za pomocą strony internetowej <a href="https://secure.jid.pl/rejestracja/">https://secure.jid.pl/rejestracja/</a>. Nie ma możliwości założenia konta za pomocą klienta XMPP.</p>
+          
+          <h3>Aktualizacja oprogramowania</h3>
+          
+          <p>Serwer OpenFire został zaktualizowany do wersji <code>3.8.2</code>.</p>
+          
+          <h3>Czyszczenie bazy danych</h3>
+          
+          <p>Przy okazji zmian zostało dokonane czyszczenie baz danych. Polegało ono na usunięciu dawno nie używanych kont oraz kont, które były utworzone przez boty. Okazało się, że do usunięcia było <strong>około 250 000 kont</strong>! Oczywiście mój skrypt mógł się mylić i usunął więcej niż powinien. Wiem przynajmniej o jednym takim przypadku - proszę w takim razie zarejestrować się ponownie.</p>
+          
+          <p>Jeżeli zastanawiasz się, czy konto o wymarzonym loginie jest dostępne - nic prostszego - <a href="https://secure.jid.pl/rejestracja/">spróbuj je zarejestrować</a>!</p>
+          
+          <h3>Problemy?</h3>
+          
+          <p>Trochę zostało pomieszkane w konfiguracji serwera przez ostatnie dni. Jeżeli zauważysz jakiś problem - proszę <a href="/contact/">daj mi znać</a>.</p>
+          <div class="comments">
+            <script>
+              var idcomments_acct='6eb4f3493c120245703a2155af29056d';
+              var idcomments_post_id='d65539d62e4bd9c3ba16a0c4801cf6c780824d52';
+               var idcomments_post_url='http://www.jid.pl/blog/2014/01/11/zmiany-na-serwerze-sprawozdanie/';
+            </script>
+            <span id="IDCommentsPostTitle" style="display:none"></span>
+            <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+          </div>
         </div>
-        <div class="span3">
-          <h3>Ostatnie wiadomości na blogu</h3>
-          <div class="item">
-            <h6>11 January 2014</h6>
-            <h4>
-              <a href="/blog/2014/01/11/zmiany-na-serwerze-sprawozdanie/">Zmiany na serwerze: sprawozdanie</a>
-            </h4>
-          </div>
-          <div class="item">
-            <h6>04 January 2014</h6>
-            <h4>
-              <a href="/blog/2014/01/04/zmiany-na-serwerze/">Zmiany na serwerze</a>
-            </h4>
-          </div>
-          <div class="item">
-            <h6>11 May 2012</h6>
-            <h4>
-              <a href="/blog/2012/05/11/majowa-aktualizacja/">Majowe aktualizacje</a>
-            </h4>
-          </div>
-          <div class="item">
-            <h6>26 April 2012</h6>
-            <h4>
-              <a href="/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/">Aktualizacja oprogramowania 27.04.2012</a>
-            </h4>
-          </div>
+        <div class="span2">
           <div style="margin-top: 20px;">
             <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="boxgrinder">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           </div>

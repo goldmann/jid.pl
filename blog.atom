@@ -2,13 +2,60 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.jid.pl/</id>
   <title>Wiadomo&#347;ci</title>
-  <updated>2014-01-07T18:57:58+01:00</updated>
+  <updated>2014-01-11T21:30:17+01:00</updated>
   <link href="http://www.jid.pl/blog.atom" rel="self" type="application/atom+xml" />
   <link href="http://www.jid.pl/" rel="alternate" type="text/html" />
   <entry>
+    <id>http://www.jid.pl/blog/2014/01/11/zmiany-na-serwerze-sprawozdanie/</id>
+    <title>Zmiany na serwerze: sprawozdanie</title>
+    <updated>2014-01-11T21:30:17+01:00</updated>
+    <published>2014-01-04T21:35:00+01:00</published>
+    <link href="http://www.jid.pl/blog/2014/01/11/zmiany-na-serwerze-sprawozdanie/" rel="alternate" type="text/html" />
+    <author>
+      <name>Marek Goldmann</name>
+    </author>
+    <category term="info"></category>
+    <summary>
+      Tak jak wspomniałem wcześniej - zabrałem się do pracy i dokonałem kilku zmian na serwerze.
+      
+      Rejestracja
+      
+      Rejestracja została otwarta dla nowych użytkowników. Jest ona dostępna wyłącznie za pomocą strony internetowej https://secure.jid.pl/rejestracja/. Nie ma możliwości założenia konta za pomocą klienta XMPP.
+      
+      Aktualizacja oprogramowania
+      
+      Serwer OpenFire został zaktualizowany do wersji 3.8.2.
+      
+      Czyszczenie bazy danych
+      
+      Przy okazji zmian zostało dokonane czyszczenie baz danych. Polegało ono na usunięciu dawno nie używanych kont oraz kont, które były utworzone przez boty. Okazało się, że do usunięcia było około 250 000 kont! Oczywiście mój skrypt mógł się mylić i usunął więcej niż powinien. Wiem przynajmniej o jednym takim przypadku - proszę w takim...
+    </summary>
+    <content type="html">
+      &lt;p&gt;Tak &lt;a href=&quot;http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/&quot;&gt;jak wspomniałem wcześniej&lt;/a&gt; - zabrałem się do pracy i dokonałem kilku zmian na serwerze.&lt;/p&gt;
+      
+      &lt;h3&gt;Rejestracja&lt;/h3&gt;
+      
+      &lt;p&gt;Rejestracja została otwarta dla nowych użytkowników. Jest ona dostępna &lt;strong&gt;wyłącznie&lt;/strong&gt; za pomocą strony internetowej &lt;a href=&quot;https://secure.jid.pl/rejestracja/&quot;&gt;https://secure.jid.pl/rejestracja/&lt;/a&gt;. Nie ma możliwości założenia konta za pomocą klienta XMPP.&lt;/p&gt;
+      
+      &lt;h3&gt;Aktualizacja oprogramowania&lt;/h3&gt;
+      
+      &lt;p&gt;Serwer OpenFire został zaktualizowany do wersji &lt;code&gt;3.8.2&lt;/code&gt;.&lt;/p&gt;
+      
+      &lt;h3&gt;Czyszczenie bazy danych&lt;/h3&gt;
+      
+      &lt;p&gt;Przy okazji zmian zostało dokonane czyszczenie baz danych. Polegało ono na usunięciu dawno nie używanych kont oraz kont, które były utworzone przez boty. Okazało się, że do usunięcia było &lt;strong&gt;około 250 000 kont&lt;/strong&gt;! Oczywiście mój skrypt mógł się mylić i usunął więcej niż powinien. Wiem przynajmniej o jednym takim przypadku - proszę w takim razie zarejestrować się ponownie.&lt;/p&gt;
+      
+      &lt;p&gt;Jeżeli zastanawiasz się, czy konto o wymarzonym loginie jest dostępne - nic prostszego - &lt;a href=&quot;https://secure.jid.pl/rejestracja/&quot;&gt;spróbuj je zarejestrować&lt;/a&gt;!&lt;/p&gt;
+      
+      &lt;h3&gt;Problemy?&lt;/h3&gt;
+      
+      &lt;p&gt;Trochę zostało pomieszkane w konfiguracji serwera przez ostatnie dni. Jeżeli zauważysz jakiś problem - proszę &lt;a href=&quot;http://www.jid.pl/contact/&quot;&gt;daj mi znać&lt;/a&gt;.&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
     <id>http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/</id>
     <title>Zmiany na serwerze</title>
-    <updated>2014-01-07T18:57:58+01:00</updated>
+    <updated>2014-01-07T18:58:56+01:00</updated>
     <published>2014-01-04T17:55:00+01:00</published>
     <link href="http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/" rel="alternate" type="text/html" />
     <author>
@@ -53,7 +100,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/</id>
     <title>Majowe aktualizacje</title>
-    <updated>2014-01-04T17:52:40+01:00</updated>
+    <updated>2014-01-07T18:58:56+01:00</updated>
     <published>2012-05-11T21:04:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/" rel="alternate" type="text/html" />
     <author>
@@ -111,7 +158,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/</id>
     <title>Aktualizacja oprogramowania 27.04.2012</title>
-    <updated>2014-01-04T17:52:40+01:00</updated>
+    <updated>2014-01-07T18:58:56+01:00</updated>
     <published>2012-04-26T14:38:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/" rel="alternate" type="text/html" />
     <author>
@@ -137,7 +184,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
     <title>Kwietniowe awarie</title>
-    <updated>2014-01-04T17:52:40+01:00</updated>
+    <updated>2014-01-07T18:58:56+01:00</updated>
     <published>2012-04-23T10:45:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/" rel="alternate" type="text/html" />
     <author>
@@ -200,7 +247,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/22/nowa-strona/</id>
     <title>Nowa strona!</title>
-    <updated>2014-01-04T17:52:40+01:00</updated>
+    <updated>2014-01-07T18:58:56+01:00</updated>
     <published>2012-04-22T11:38:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/22/nowa-strona/" rel="alternate" type="text/html" />
     <author>
