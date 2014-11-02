@@ -7,49 +7,68 @@ title: Informacje i statystyki
 
 %p Poniżej znajdziejsz garść informacji na temat serwera.
 
-%h3 Statystyki
-
 :javascript
+  moment.locale("pl");
   $.ajax({
-    url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?',
+    url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://jid.pl/stats/') + '&callback=?',
     dataType: 'json',
     timeout: 5000,
     success: function(data) {
-      $('#users-count').html($.parseJSON(data.contents)["users"]);
-      $('#servers-count').html($.parseJSON(data.contents)["servers"]);
-      $('#process-uptime').html($.parseJSON(data.contents)["process_uptime"]);
-      $('#system-uptime').html($.parseJSON(data.contents)["system_uptime"]);
-    },
-    error: function(xhr, options, error) {
-      $('#users-count').html("błąd");
-      $('#servers-count').html("błąd");
-      $('#process-uptime').html("błąd");
-      $('#system-uptime').html("błąd");
+      console.log(data.contents.user.count)
+      //alert(moment(data.contents.uptime*1000).fromNow());
+      $('#users-count').html(data.contents.user.count);
+      $('#user-sessions-encrypted').html(data.contents.user.sessions.encrypted);
+      $('#user-sessions-unencrypted').html(data.contents.user.sessions.unencrypted);
+      $('#user-sessions').html(data.contents.user.sessions.unencrypted + data.contents.user.sessions.encrypted);
+
+      $('#server-sessions-outgoing-encrypted').html(data.contents.server.sessions.outgoing.encrypted);
+      $('#server-sessions-outgoing-unencrypted').html(data.contents.server.sessions.outgoing.unencrypted);
+      $('#server-sessions-outgoing').html(data.contents.server.sessions.outgoing.unencrypted + data.contents.server.sessions.outgoing.encrypted);
+
+      $('#server-sessions-incoming-encrypted').html(data.contents.server.sessions.incoming.encrypted);
+      $('#server-sessions-incoming-unencrypted').html(data.contents.server.sessions.incoming.unencrypted);
+      $('#server-sessions-incoming').html(data.contents.server.sessions.incoming.unencrypted + data.contents.server.sessions.incoming.encrypted);
+
+      $('#uptime').html(moment(data.contents.uptime*1000).fromNow());
     }
   });
 
+%h3{:style=>"margin-bottom: 20px;"} Statystyki
 
-%table.table{:style=>"width: 400px;"}
-  %tr
-    %th Ilość podłączonych użytkowników
-    %td
-      %strong
-        #users-count ładowanie...
-  %tr
-    %th Ilość podłączonych serwerów
-    %td
-      %strong
-        #servers-count ładowanie...
-  %tr
-    %th Czas działania serwera
-    %td
-      %strong
-        #process-uptime ładowanie...
-  %tr
-    %th Czas działania systemu
-    %td
-      %strong
-        #system-uptime ładowanie...
+#stats
+  //{:style=>"display: none;"}
+  %table.table{:style=>"width: 400px;"}
+    %tr
+      %th
+        %div Liczba sesji użytkowników
+        %div{:style=>"font-weight: normal;"} Szyfrowanych
+        %div{:style=>"font-weight: normal;"} Nieszyfrowanych
+      %td
+        #user-sessions{:style=>"font-weight: bold;"}
+        #user-sessions-encrypted
+        #user-sessions-unencrypted
+    %tr
+      %th
+        %div Liczba sesji wychodzących serwerów
+        %div{:style=>"font-weight: normal;"} Szyfrowanych
+        %div{:style=>"font-weight: normal;"} Nieszyfrowanych
+      %td
+        #server-sessions-outgoing{:style=>"font-weight: bold;"}
+        #server-sessions-outgoing-encrypted
+        #server-sessions-outgoing-unencrypted
+    %tr
+      %th
+        %div Liczba sesji przychodzących serwerów
+        %div{:style=>"font-weight: normal;"} Szyfrowanych
+        %div{:style=>"font-weight: normal;"} Nieszyfrowanych
+      %td
+        #server-sessions-incoming{:style=>"font-weight: bold;"}
+        #server-sessions-incoming-encrypted
+        #server-sessions-incoming-unencrypted
+    %tr
+      %th Serwer został uruchomiony
+      %td
+        #uptime{:style=>"font-weight: bold;"}
 
 %h3 Dostępność
 
@@ -61,55 +80,55 @@ title: Informacje i statystyki
 %table.table{:style=>"width: 400px;"}
   %tr
     %th{:style=>"width: 200px;"} System operacyjny
-    %td CentOS 6
+    %td CentOS 7
   %tr
     %th Serwer XMPP
-    %td Openfire 3.8.2
+    %td Prosody 0.10-pre
   %tr
     %th Obsługiwane porty
     %td 5222 - TLS i połączenia nieszyfrowane<br/>5223 - SSL (nie zalecane)
-  %tr
-    %th Dostępne transporty
-    %td
-      %p <a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3
-      %ul
-        %li MSN Messenger
-        %li IRC
-        %li AOL Instant Messenger
-        %li ICQ
-        %li Yahoo! Messenger
-        %li Google Talk
-        %li XMPP
+/  %tr
+/    %th Dostępne transporty
+/    %td
+/      %p <a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3
+/      %ul
+/        %li MSN Messenger
+/        %li IRC
+/        %li AOL Instant Messenger
+/        %li ICQ
+/        %li Yahoo! Messenger
+/        %li Google Talk
+/        %li XMPP
 
 
-%h3 Parametry techniczne fizycznego serwera
+/%h3 Parametry techniczne fizycznego serwera
 
-%p W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.
+/%p W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.
 
-%table.table{:style=>"width: 400px;"}
-  %tr
-    %th{:style=>"width: 120px;"} Model serwera
-    %td Dell PowerEdge 1950 III
-  %tr
-    %th Procesor
-    %td 1x Intel Xeon E5430 (2.66GHz)
-  %tr
-    %th Pamiec RAM
-    %td 8 GB ECC-R
-  %tr
-    %th Dysk twardy
-    %td 2x 1 TB SATA II (RAID-1)
+/%table.table{:style=>"width: 400px;"}
+/  %tr
+/    %th{:style=>"width: 120px;"} Model serwera
+/    %td Dell PowerEdge 1950 III
+/  %tr
+/    %th Procesor
+/    %td 1x Intel Xeon E5430 (2.66GHz)
+/  %tr
+/    %th Pamiec RAM
+/    %td 8 GB ECC-R
+/  %tr
+/    %th Dysk twardy
+/    %td 2x 1 TB SATA II (RAID-1)
 
-%h3 Parametry techniczne wirtualnej maszyny
+/%h3 Parametry techniczne wirtualnej maszyny
 
-%table.table{:style=>"width: 400px;"}
-  %tr
-    %th{:style=>"width: 120px;"} Procesor
-    %td 1 rdzeń, Intel Xeon E5430 (2.66GHz)
-  %tr
-    %th Pamięć RAM
-    %td 2 GB
-  %tr
-    %th Dysk twardy
-    %td 20 GB
+/%table.table{:style=>"width: 400px;"}
+/  %tr
+/    %th{:style=>"width: 120px;"} Procesor
+/    %td 1 rdzeń, Intel Xeon E5430 (2.66GHz)
+/  %tr
+/    %th Pamięć RAM
+/    %td 2 GB
+/  %tr
+/    %th Dysk twardy
+/    %td 20 GB
 
