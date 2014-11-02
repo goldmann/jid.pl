@@ -5,6 +5,7 @@
     <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
     <script src="/javascripts/jquery-1.7.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment-with-locales.min.js"></script>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   </head>
   <style>
@@ -100,60 +101,80 @@
     <div id="content">
       <h2>Informacje i statystyki</h2>
       <p>Poniżej znajdziejsz garść informacji na temat serwera.</p>
-      <h3>Statystyki</h3>
       <script>
+        moment.locale("pl");
         $.ajax({
-          url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://stats.jid.pl/stats.txt') + '&callback=?',
+          url: 'http://whateverorigin.org/get?url=' + encodeURIComponent('http://jid.pl/stats/') + '&callback=?',
           dataType: 'json',
           timeout: 5000,
           success: function(data) {
-            $('#users-count').html($.parseJSON(data.contents)["users"]);
-            $('#servers-count').html($.parseJSON(data.contents)["servers"]);
-            $('#process-uptime').html($.parseJSON(data.contents)["process_uptime"]);
-            $('#system-uptime').html($.parseJSON(data.contents)["system_uptime"]);
-          },
-          error: function(xhr, options, error) {
-            $('#users-count').html("błąd");
-            $('#servers-count').html("błąd");
-            $('#process-uptime').html("błąd");
-            $('#system-uptime').html("błąd");
+            console.log(data.contents.user.count)
+            //alert(moment(data.contents.uptime*1000).fromNow());
+            $('#users-count').html(data.contents.user.count);
+            $('#user-sessions-encrypted').html(data.contents.user.sessions.encrypted);
+            $('#user-sessions-unencrypted').html(data.contents.user.sessions.unencrypted);
+            $('#user-sessions').html(data.contents.user.sessions.unencrypted + data.contents.user.sessions.encrypted);
+        
+            $('#server-sessions-outgoing-encrypted').html(data.contents.server.sessions.outgoing.encrypted);
+            $('#server-sessions-outgoing-unencrypted').html(data.contents.server.sessions.outgoing.unencrypted);
+            $('#server-sessions-outgoing').html(data.contents.server.sessions.outgoing.unencrypted + data.contents.server.sessions.outgoing.encrypted);
+        
+            $('#server-sessions-incoming-encrypted').html(data.contents.server.sessions.incoming.encrypted);
+            $('#server-sessions-incoming-unencrypted').html(data.contents.server.sessions.incoming.unencrypted);
+            $('#server-sessions-incoming').html(data.contents.server.sessions.incoming.unencrypted + data.contents.server.sessions.incoming.encrypted);
+        
+            $('#uptime').html(moment(data.contents.uptime*1000).fromNow());
           }
         });
       </script>
-      <table class="table" style="width: 400px;">
-        <tr>
-          <th>Ilość podłączonych użytkowników</th>
-          <td>
-            <strong>
-              <div id="users-count">ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-        <tr>
-          <th>Ilość podłączonych serwerów</th>
-          <td>
-            <strong>
-              <div id="servers-count">ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-        <tr>
-          <th>Czas działania serwera</th>
-          <td>
-            <strong>
-              <div id="process-uptime">ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-        <tr>
-          <th>Czas działania systemu</th>
-          <td>
-            <strong>
-              <div id="system-uptime">ładowanie...</div>
-            </strong>
-          </td>
-        </tr>
-      </table>
+      <h3 style="margin-bottom: 20px;">Statystyki</h3>
+      <div id="stats">
+        <!-- /{:style=>"display: none;"} -->
+        <table class="table" style="width: 400px;">
+          <tr>
+            <th>
+              <div>Liczba sesji użytkowników</div>
+              <div style="font-weight: normal;">Szyfrowanych</div>
+              <div style="font-weight: normal;">Nieszyfrowanych</div>
+            </th>
+            <td>
+              <div id="user-sessions" style="font-weight: bold;"></div>
+              <div id="user-sessions-encrypted"></div>
+              <div id="user-sessions-unencrypted"></div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <div>Liczba sesji wychodzących serwerów</div>
+              <div style="font-weight: normal;">Szyfrowanych</div>
+              <div style="font-weight: normal;">Nieszyfrowanych</div>
+            </th>
+            <td>
+              <div id="server-sessions-outgoing" style="font-weight: bold;"></div>
+              <div id="server-sessions-outgoing-encrypted"></div>
+              <div id="server-sessions-outgoing-unencrypted"></div>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <div>Liczba sesji przychodzących serwerów</div>
+              <div style="font-weight: normal;">Szyfrowanych</div>
+              <div style="font-weight: normal;">Nieszyfrowanych</div>
+            </th>
+            <td>
+              <div id="server-sessions-incoming" style="font-weight: bold;"></div>
+              <div id="server-sessions-incoming-encrypted"></div>
+              <div id="server-sessions-incoming-unencrypted"></div>
+            </td>
+          </tr>
+          <tr>
+            <th>Serwer został uruchomiony</th>
+            <td>
+              <div id="uptime" style="font-weight: bold;"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
       <h3>Dostępność</h3>
       <a href="http://uptime.goldmann.pl/687613">
         <img src="https://share.pingdom.com/banners/0ffbf177">
@@ -162,76 +183,65 @@
       <table class="table" style="width: 400px;">
         <tr>
           <th style="width: 200px;">System operacyjny</th>
-          <td>CentOS 6</td>
+          <td>CentOS 7</td>
         </tr>
         <tr>
           <th>Serwer XMPP</th>
-          <td>Openfire 3.8.2</td>
+          <td>Prosody 0.10-pre</td>
         </tr>
         <tr>
           <th>Obsługiwane porty</th>
           <td>5222 - TLS i połączenia nieszyfrowane<br/>5223 - SSL (nie zalecane)</td>
         </tr>
-        <tr>
-          <th>Dostępne transporty</th>
-          <td>
-            <p><a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3</p>
-            <ul>
-              <li>MSN Messenger</li>
-              <li>IRC</li>
-              <li>AOL Instant Messenger</li>
-              <li>ICQ</li>
-              <li>Yahoo! Messenger</li>
-              <li>Google Talk</li>
-              <li>XMPP</li>
-            </ul>
-          </td>
-        </tr>
       </table>
-      <h3>Parametry techniczne fizycznego serwera</h3>
-      <p>W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej.</p>
-      <table class="table" style="width: 400px;">
-        <tr>
-          <th style="width: 120px;">Model serwera</th>
-          <td>Dell PowerEdge 1950 III</td>
-        </tr>
-        <tr>
-          <th>Procesor</th>
-          <td>1x Intel Xeon E5430 (2.66GHz)</td>
-        </tr>
-        <tr>
-          <th>Pamiec RAM</th>
-          <td>8 GB ECC-R</td>
-        </tr>
-        <tr>
-          <th>Dysk twardy</th>
-          <td>2x 1 TB SATA II (RAID-1)</td>
-        </tr>
-      </table>
-      <h3>Parametry techniczne wirtualnej maszyny</h3>
-      <table class="table" style="width: 400px;">
-        <tr>
-          <th style="width: 120px;">Procesor</th>
-          <td>1 rdzeń, Intel Xeon E5430 (2.66GHz)</td>
-        </tr>
-        <tr>
-          <th>Pamięć RAM</th>
-          <td>2 GB</td>
-        </tr>
-        <tr>
-          <th>Dysk twardy</th>
-          <td>20 GB</td>
-        </tr>
-      </table>
+      <!-- %tr -->
+      <!-- %th Dostępne transporty -->
+      <!-- %td -->
+      <!-- %p <a href="http://community.igniterealtime.org/community/plugins/im_gateway_support">Kraken IM Gateway</a> 1.1.3beta3 -->
+      <!-- %ul -->
+      <!-- %li MSN Messenger -->
+      <!-- %li IRC -->
+      <!-- %li AOL Instant Messenger -->
+      <!-- %li ICQ -->
+      <!-- %li Yahoo! Messenger -->
+      <!-- %li Google Talk -->
+      <!-- %li XMPP -->
+      <!-- %h3 Parametry techniczne fizycznego serwera -->
+      <!-- %p W tej chwili używamy jednej maszyny wirtualnej na serwerze o konfiguracji przedstawionej poniżej. -->
+      <!-- %table.table{:style=>"width: 400px;"} -->
+      <!-- %tr -->
+      <!-- %th{:style=>"width: 120px;"} Model serwera -->
+      <!-- %td Dell PowerEdge 1950 III -->
+      <!-- %tr -->
+      <!-- %th Procesor -->
+      <!-- %td 1x Intel Xeon E5430 (2.66GHz) -->
+      <!-- %tr -->
+      <!-- %th Pamiec RAM -->
+      <!-- %td 8 GB ECC-R -->
+      <!-- %tr -->
+      <!-- %th Dysk twardy -->
+      <!-- %td 2x 1 TB SATA II (RAID-1) -->
+      <!-- %h3 Parametry techniczne wirtualnej maszyny -->
+      <!-- %table.table{:style=>"width: 400px;"} -->
+      <!-- %tr -->
+      <!-- %th{:style=>"width: 120px;"} Procesor -->
+      <!-- %td 1 rdzeń, Intel Xeon E5430 (2.66GHz) -->
+      <!-- %tr -->
+      <!-- %th Pamięć RAM -->
+      <!-- %td 2 GB -->
+      <!-- %tr -->
+      <!-- %th Dysk twardy -->
+      <!-- %td 20 GB -->
     </div>
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount','UA-351971-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-351971-2");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
   </body>
 </html>

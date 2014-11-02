@@ -5,6 +5,7 @@
     <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="/stylesheets/main.css" rel="stylesheet" type="text/css">
     <script src="/javascripts/jquery-1.7.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment-with-locales.min.js"></script>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   </head>
   <style>
@@ -103,13 +104,14 @@
       <iframe src="https://docs.google.com/spreadsheet/embeddedform?hl=pl&formkey=dEJ5eEVLWmJQQUY4SVJlTXkxNmRmQXc6MQ" width="760" height="680" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount','UA-351971-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-    <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-351971-2");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
   </body>
 </html>
