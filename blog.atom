@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>http://www.jid.pl/</id>
   <title>Wiadomo&#347;ci</title>
-  <updated>2014-11-02T22:59:19+01:00</updated>
+  <updated>2014-11-26T15:13:47+01:00</updated>
   <link href="http://www.jid.pl/blog.atom" rel="self" type="application/atom+xml" />
   <link href="http://www.jid.pl/" rel="alternate" type="text/html" />
   <entry>
     <id>http://www.jid.pl/blog/2014/01/11/zmiany-na-serwerze-sprawozdanie/</id>
     <title>Zmiany na serwerze: sprawozdanie</title>
-    <updated>2014-11-02T22:59:19+01:00</updated>
+    <updated>2014-11-26T15:13:47+01:00</updated>
     <published>2014-01-11T21:35:00+01:00</published>
     <link href="http://www.jid.pl/blog/2014/01/11/zmiany-na-serwerze-sprawozdanie/" rel="alternate" type="text/html" />
     <author>
@@ -55,7 +55,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/</id>
     <title>Zmiany na serwerze</title>
-    <updated>2014-11-02T22:59:19+01:00</updated>
+    <updated>2014-11-26T15:13:47+01:00</updated>
     <published>2014-01-04T17:55:00+01:00</published>
     <link href="http://www.jid.pl/blog/2014/01/04/zmiany-na-serwerze/" rel="alternate" type="text/html" />
     <author>
@@ -100,7 +100,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/</id>
     <title>Majowe aktualizacje</title>
-    <updated>2014-11-02T22:59:19+01:00</updated>
+    <updated>2014-11-26T15:13:47+01:00</updated>
     <published>2012-05-11T21:04:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/05/11/majowa-aktualizacja/" rel="alternate" type="text/html" />
     <author>
@@ -158,7 +158,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/</id>
     <title>Aktualizacja oprogramowania 27.04.2012</title>
-    <updated>2014-11-02T22:59:19+01:00</updated>
+    <updated>2014-11-26T15:13:47+01:00</updated>
     <published>2012-04-26T14:38:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/26/aktualizacja-oprogramowania-27-04-2012/" rel="alternate" type="text/html" />
     <author>
@@ -184,7 +184,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/</id>
     <title>Kwietniowe awarie</title>
-    <updated>2014-11-02T22:59:19+01:00</updated>
+    <updated>2014-11-26T15:13:47+01:00</updated>
     <published>2012-04-23T10:45:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/23/kwietniowe-awarie/" rel="alternate" type="text/html" />
     <author>
@@ -247,7 +247,7 @@
   <entry>
     <id>http://www.jid.pl/blog/2012/04/22/nowa-strona/</id>
     <title>Nowa strona!</title>
-    <updated>2014-11-02T22:59:19+01:00</updated>
+    <updated>2014-11-26T15:13:47+01:00</updated>
     <published>2012-04-22T11:38:00+02:00</published>
     <link href="http://www.jid.pl/blog/2012/04/22/nowa-strona/" rel="alternate" type="text/html" />
     <author>
