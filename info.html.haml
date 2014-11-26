@@ -14,8 +14,6 @@ title: Informacje i statystyki
     dataType: 'json',
     timeout: 5000,
     success: function(data) {
-      console.log(data.contents.user.count)
-      //alert(moment(data.contents.uptime*1000).fromNow());
       $('#users-count').html(data.contents.user.count);
       $('#user-sessions-encrypted').html(data.contents.user.sessions.encrypted);
       $('#user-sessions-unencrypted').html(data.contents.user.sessions.unencrypted);
@@ -29,7 +27,7 @@ title: Informacje i statystyki
       $('#server-sessions-incoming-unencrypted').html(data.contents.server.sessions.incoming.unencrypted);
       $('#server-sessions-incoming').html(data.contents.server.sessions.incoming.unencrypted + data.contents.server.sessions.incoming.encrypted);
 
-      $('#uptime').html(moment(data.contents.uptime*1000).fromNow());
+      $('#uptime').html(moment(data.contents.uptime).fromNow());
     }
   });
 
