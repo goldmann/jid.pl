@@ -27,7 +27,7 @@ title: Informacje i statystyki
       $('#server-sessions-incoming-unencrypted').html(data.contents.server.sessions.incoming.unencrypted);
       $('#server-sessions-incoming').html(data.contents.server.sessions.incoming.unencrypted + data.contents.server.sessions.incoming.encrypted);
 
-      $('#uptime').html(moment(data.contents.uptime).fromNow());
+      $('#uptime').html(moment(data.contents.uptime * 1000).fromNow());
     }
   });
 
