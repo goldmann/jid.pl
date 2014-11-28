@@ -28,6 +28,7 @@ title: Informacje i statystyki
       $('#server-sessions-incoming').html(data.contents.server.sessions.incoming.unencrypted + data.contents.server.sessions.incoming.encrypted);
 
       $('#uptime').html(moment(data.contents.uptime * 1000).fromNow());
+      $('#version').html(data.contents.version);
     }
   });
 
@@ -81,7 +82,9 @@ title: Informacje i statystyki
     %td CentOS 7
   %tr
     %th Serwer XMPP
-    %td Prosody 0.10-pre
+    %td
+      %span Prosody
+      %span#version
   %tr
     %th Obsługiwane porty
     %td 5222 - TLS i połączenia nieszyfrowane<br/>5223 - SSL (nie zalecane)
