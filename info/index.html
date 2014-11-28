@@ -122,6 +122,7 @@
             $('#server-sessions-incoming').html(data.contents.server.sessions.incoming.unencrypted + data.contents.server.sessions.incoming.encrypted);
         
             $('#uptime').html(moment(data.contents.uptime * 1000).fromNow());
+            $('#version').html(data.contents.version);
           }
         });
       </script>
@@ -185,7 +186,10 @@
         </tr>
         <tr>
           <th>Serwer XMPP</th>
-          <td>Prosody 0.10-pre</td>
+          <td>
+            <span>Prosody</span>
+            <span id="version"></span>
+          </td>
         </tr>
         <tr>
           <th>Obsługiwane porty</th>
